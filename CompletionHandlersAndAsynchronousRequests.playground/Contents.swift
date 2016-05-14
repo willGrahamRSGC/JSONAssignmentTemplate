@@ -64,22 +64,23 @@ class ViewController : UIViewController {
             // response - contains the HTTP response code(s)
             // error - contains any error messages, if applicable
             
-            print("")
-            print("====== data from the request follows ======")
-            print(data)
-            print("")
-            print("====== response codes from the request follows ======")
-            print(response)
-            print("")
-            print("====== errors from the request follows ======")
-            print(error)
-            
             // Cast the NSURLResponse object into an NSHTTPURLResponse objecct
             if let r = response as? NSHTTPURLResponse {
                 
                 // If the request was successful, parse the given data
                 if r.statusCode == 200 {
-                    
+        
+                    // Show debug information (if a request was completed successfully)            
+                    print("")
+                    print("====== data from the request follows ======")
+                    print(data)
+                    print("")
+                    print("====== response codes from the request follows ======")
+                    print(response)
+                    print("")
+                    print("====== errors from the request follows ======")
+                    print(error)
+            
                     if let d = data {
                         
                         // Parse the retrieved data
