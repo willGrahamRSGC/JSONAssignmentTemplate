@@ -56,8 +56,10 @@ class ViewController : UIViewController {
                 print("could not get atmosphere data")
                 return
             }
-            print("\(atmosphereData)")
-
+            print("the humidity is: \(atmosphereData["humidity"])")
+            print("the pressure is: \(atmosphereData["pressure"])")
+            print("the visibility is: \(atmosphereData["visibility"])")
+            print("the rising is: \(atmosphereData["rising"])")
             print("we got to atmosphere data")
             
             // Now we can update the UI
