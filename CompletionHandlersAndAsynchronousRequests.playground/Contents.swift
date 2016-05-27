@@ -21,7 +21,7 @@ class ViewController : UIViewController {
             
             // Do the initial de-serialization
             // Source JSON is here:
-            // http://www.learnswiftonline.com/Samples/subway.json
+            // https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys
             //
             let json = try NSJSONSerialization.JSONObjectWithData(theData, options: NSJSONReadingOptions.AllowFragments) as! AnyObject
             
@@ -30,9 +30,35 @@ class ViewController : UIViewController {
             print("====== the retrieved JSON is as follows ======")
             print(json)
             
-            // Now we can parse this...
-            print("")
-            print("Now, add your parsing code here...")
+            // Get the top level dictionary
+            guard let topLevelDictionary : [ String : AnyObject ] = json as? [ String : AnyObject ] else {
+                print("could not top level dictionary")
+                return
+            }
+            
+            // Now get query data
+            guard let queryData : [ String : AnyObject ] = topLevelDictionary["query"] as? [ String : AnyObject ] else {
+                print("could not get query data")
+                return
+            }
+            // now get results data
+            guard let resultsData : [ String : AnyObject ] = queryData["results"] as? [ String : AnyObject ] else {
+                print("could not get results data")
+                return
+            }
+            // now get channel data
+            guard let channelData : [ String : AnyObject ] = resultsData ["channel"] as? [ String : AnyObject ] else {
+                print("could not get channel data")
+                return
+            }
+            print("=======now for atmosphere data========")
+            guard let atmosphereData : [ String : AnyObject ] = channelData ["atmosphere"] as? [ String : AnyObject ] else {
+                print("could not get atmosphere data")
+                return
+            }
+            print("\(atmosphereData)")
+
+            print("we got to atmosphere data")
             
             // Now we can update the UI
             // (must be done asynchronously)
@@ -95,7 +121,7 @@ class ViewController : UIViewController {
         }
         
         // Define a URL to retrieve a JSON file from
-        let address : String = "http://www.learnswiftonline.com/Samples/subway.json"
+        let address : String = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys"
         
         // Try to make a URL request object
         if let url = NSURL(string: address) {

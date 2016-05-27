@@ -1,0 +1,149 @@
+{
+   "query":{
+      "count":1,
+      "created":"2016-05-26T22:57:53Z",
+      "lang":"en-US",
+      "results":{
+         "channel":{
+            "units":{
+               "distance":"mi",
+               "pressure":"in",
+               "speed":"mph",
+               "temperature":"F"
+            },
+            "title":"Yahoo! Weather - Nome, AK, US",
+            "link":"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/",
+            "description":"Yahoo! Weather for Nome, AK, US",
+            "language":"en-us",
+            "lastBuildDate":"Thu, 26 May 2016 02:57 PM AKDT",
+            "ttl":"60",
+            "location":{
+               "city":"Nome",
+               "country":"United States",
+               "region":" AK"
+            },
+            "wind":{
+               "chill":"32",
+               "direction":"203",
+               "speed":"14"
+            },
+            "atmosphere":{
+               "humidity":"86",
+               "pressure":"1024.0",
+               "rising":"0",
+               "visibility":"16.1"
+            },
+            "astronomy":{
+               "sunrise":"0:55 am",
+               "sunset":"5:4 am"
+            },
+            "image":{
+               "title":"Yahoo! Weather",
+               "width":"142",
+               "height":"18",
+               "link":"http://weather.yahoo.com",
+               "url":"http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+            },
+            "item":{
+               "title":"Conditions for Nome, AK, US at 01:00 PM AKDT",
+               "lat":"64.499474",
+               "long":"-165.405792",
+               "link":"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/",
+               "pubDate":"Thu, 26 May 2016 01:00 PM AKDT",
+               "condition":{
+                  "code":"26",
+                  "date":"Thu, 26 May 2016 01:00 PM AKDT",
+                  "temp":"39",
+                  "text":"Cloudy"
+               },
+               "forecast":[
+                  {
+                     "code":"39",
+                     "date":"26 May 2016",
+                     "day":"Thu",
+                     "high":"41",
+                     "low":"38",
+                     "text":"Scattered Showers"
+                  },
+                  {
+                     "code":"30",
+                     "date":"27 May 2016",
+                     "day":"Fri",
+                     "high":"53",
+                     "low":"35",
+                     "text":"Partly Cloudy"
+                  },
+                  {
+                     "code":"32",
+                     "date":"28 May 2016",
+                     "day":"Sat",
+                     "high":"60",
+                     "low":"48",
+                     "text":"Sunny"
+                  },
+                  {
+                     "code":"34",
+                     "date":"29 May 2016",
+                     "day":"Sun",
+                     "high":"59",
+                     "low":"51",
+                     "text":"Mostly Sunny"
+                  },
+                  {
+                     "code":"32",
+                     "date":"30 May 2016",
+                     "day":"Mon",
+                     "high":"58",
+                     "low":"50",
+                     "text":"Sunny"
+                  },
+                  {
+                     "code":"32",
+                     "date":"31 May 2016",
+                     "day":"Tue",
+                     "high":"55",
+                     "low":"46",
+                     "text":"Sunny"
+                  },
+                  {
+                     "code":"34",
+                     "date":"01 Jun 2016",
+                     "day":"Wed",
+                     "high":"63",
+                     "low":"50",
+                     "text":"Mostly Sunny"
+                  },
+                  {
+                     "code":"34",
+                     "date":"02 Jun 2016",
+                     "day":"Thu",
+                     "high":"63",
+                     "low":"49",
+                     "text":"Mostly Sunny"
+                  },
+                  {
+                     "code":"32",
+                     "date":"03 Jun 2016",
+                     "day":"Fri",
+                     "high":"59",
+                     "low":"49",
+                     "text":"Sunny"
+                  },
+                  {
+                     "code":"34",
+                     "date":"04 Jun 2016",
+                     "day":"Sat",
+                     "high":"58",
+                     "low":"48",
+                     "text":"Mostly Sunny"
+                  }
+               ],
+               "description":"<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/26.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Thu - Scattered Showers. High: 41Low: 38\n<BR /> Fri - Partly Cloudy. High: 53Low: 35\n<BR /> Sat - Sunny. High: 60Low: 48\n<BR /> Sun - Mostly Sunny. High: 59Low: 51\n<BR /> Mon - Sunny. High: 58Low: 50\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+               "guid":{
+                  "isPermaLink":"false"
+               }
+            }
+         }
+      }
+   }
+}
